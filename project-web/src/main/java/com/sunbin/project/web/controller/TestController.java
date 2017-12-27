@@ -21,7 +21,7 @@ public class TestController {
 	@RequestMapping(value = "/html")
 	public String testHtml(HttpServletRequest request) {
 		TestPojo pojo = testService.getTestPojo();
-		System.out.println("/test/html:" + pojo);
+		System.out.println("test/html:" + pojo);
 		request.setAttribute("pojo", pojo);
 		return "test/html";
 	}
@@ -30,7 +30,7 @@ public class TestController {
 	@ResponseBody
 	public String testJson() {
 		TestPojo pojo = testService.getTestPojo();
-		System.out.println("/test/json:" + JSON.toJSONString(pojo));
+		System.out.println("test/json:" + JSON.toJSONString(pojo));
 		return JSON.toJSONString(pojo);
 	}
 
