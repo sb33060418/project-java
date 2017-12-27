@@ -21,7 +21,7 @@ public class TestController {
 	@RequestMapping(value = "/html")
 	public String testHtml(HttpServletRequest request) {
 		TestPojo pojo = testService.getTestPojo();
-		System.out.println("test/html:" + pojo);
+		System.out.println("/test/html:" + pojo);
 		request.setAttribute("pojo", pojo);
 		return "test/html";
 	}
