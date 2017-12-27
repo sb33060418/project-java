@@ -1,1 +1,6 @@
 /target/
+
+/project-pojo/target/
+/project-mapper/target/
+/project-service/target/
+/project-web/target/
